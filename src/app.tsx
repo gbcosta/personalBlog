@@ -1,12 +1,9 @@
-import Header from "./components/header/header.tsx"
-import Projects from "./components/projects/projects.tsx"
-
+import HomePage from "./pages/home/home.tsx"
 export function App() {
 
   return (
-    <>
-        <Header />
-        <Projects />
-    </>
+    <div>
+        <HomePage />
+    </div>
   )
 }
