@@ -1,4 +1,4 @@
-import HomePage from "./pages/home/home.tsx"
+import HomePage from "./pages/home.tsx"
 export function App() {
 
   return (
