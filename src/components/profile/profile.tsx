@@ -7,7 +7,7 @@ const Profile = () =>{
             in JavaScript, TypeScript, HTML, and CSS. I use Node.js for the
             back-end, and I love programming in the terminal using NVIM. In
             addition to web technologies, I also know a bit about C++ and C#,
-            and I'm currently learning GOLANG.
+            and I'm currently learning GO.
         </p>
     </div>
 }
