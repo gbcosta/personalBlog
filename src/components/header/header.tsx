@@ -1,6 +1,6 @@
 const Header = () =>{
     return <div className="flex">
-        <a>Gabriel Santos</a>
+            <a className="text-xl text-white">Gabriel Santos</a>
         
     </div>
 }
