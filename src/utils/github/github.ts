@@ -17,7 +17,7 @@ const octokit = new Octokit({
 
 const getRepos = async (setRepos: any) => {
     await octokit.request('GET /users/{username}/repos', {
-    username: 'gbcosta',
+        username: 'gbcosta',
     }).then(data =>{
         setRepos(data);
     })

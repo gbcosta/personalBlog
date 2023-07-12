@@ -10,21 +10,24 @@ const filterRepos = (repos: GithubData)=>{
 
 const sortByDate = (repos: ReposData[]) =>{
     const sortedRepos = repos.sort((repoA: ReposData, repoB: ReposData)=>{
-            const dateA: Date = new Date(repoA.created_at);
-            const dateB: Date = new Date(repoB.created_at);
-            return dateB.getTime() - dateA.getTime();
-            })
+        const dateA: Date = new Date(repoA.created_at);
+        const dateB: Date = new Date(repoB.created_at);
+        return dateB.getTime() - dateA.getTime();
+    })
     return sortedRepos;
 }
 const createCards = (repos: ReposData[]) =>{
     const cards = repos.map((repo: ReposData)=>{
-            return <Card reposData={repo}/>
-            })
+        return <Card reposData={repo}/>
+    })
     return cards;
 }
-export const createReposCard = (repos: GithubData) =>{
-    if(!repos)
+export const createReposCard = (repos: GithubData | undefined) =>{
+    if(!repos){
         return;
+    }
+    console.log(repos);
+
     const filteredRepos = filterRepos(repos);
     const sortedRepos = sortByDate(filteredRepos);
     const cards = createCards(sortedRepos).slice(0, 6);
