@@ -12,7 +12,7 @@ export type ReposData = {
 }
 
 const octokit = new Octokit({ 
-  auth: "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",
+  auth: "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",
 });
 
 const getRepos = async (setRepos: any) => {

@@ -5,7 +5,6 @@ const filterRepos = (repos: GithubData)=>{
     const filteredRepos = repos.data.filter((repo: ReposData) =>{
         return repo.visibility == "public";
     })
-    console.log(filteredRepos);
     return filteredRepos;
 }
 
@@ -15,7 +14,6 @@ const sortByDate = (repos: ReposData[]) =>{
         const dateB: Date = new Date(repoB.created_at);
         return dateB.getTime() - dateA.getTime();
     })
-    console.log(sortedRepos);
     return sortedRepos;
 }
 const createCards = (repos: ReposData[]) =>{
@@ -29,7 +27,8 @@ export const createReposCard = (repos: GithubData) =>{
         return;
     const filteredRepos = filterRepos(repos);
     const sortedRepos = sortByDate(filteredRepos);
-    const cards = createCards(sortedRepos);
+    const cards = createCards(sortedRepos).slice(0, 6);
+
     return cards;
 }
 
