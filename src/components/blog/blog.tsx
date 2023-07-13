@@ -22,7 +22,7 @@ const getPosts = () =>{
 }
 
 const Blog = () =>{
-    return <div>
+    return <div className={"mb-8"}>
         <h2 className={"text-4xl text-white font-bold mb-8"}>Blog</h2>
         {getPosts()}
     </div>;
