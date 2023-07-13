@@ -35,4 +35,9 @@ export const createReposCard = (repos: GithubData | undefined) =>{
     return cards;
 }
 
+export type PostData = {
+    name: string;
+    date: Date;
+    markdown: string;
+}
 

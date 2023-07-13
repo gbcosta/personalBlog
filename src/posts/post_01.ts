@@ -1,9 +1,5 @@
+import { PostData } from "../utils/utils";
 
-type PostData = {
-    name: string;
-    data: Date;
-    markdown: string;
-}
 
 const markdown = `# First post
 
@@ -22,8 +18,9 @@ qual
 
 const post: PostData = {
     name: "test",
-    data: new Date("07-07-2023"),
+    date: new Date("07-07-2023"),
     markdown: markdown
 }
 
 export default post;
+

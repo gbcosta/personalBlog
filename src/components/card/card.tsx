@@ -9,7 +9,7 @@ const Card = (props: {reposData: ReposData}) =>{
             <a className={"w-fit overflow-hidden break-all text-base font-bold text-gray-300 hover:no-underline underline underline-offset-4"} target="_blank" href={`https://github.com/${props.reposData.full_name}`}>
                 {projectName}
             </a>
-            <p className={"text-base overflow-auto break-all flex justify-self-end"}>{props.reposData.description}</p>
+            <p className={"text-base overflow-hidden break-all flex justify-self-end"}>{props.reposData.description}</p>
         </div>)
 }
 

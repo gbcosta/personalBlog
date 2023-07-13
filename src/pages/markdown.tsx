@@ -1,11 +1,11 @@
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import "./markdown.css";
-import post from "../posts/post_01.ts";
+import posts from "../posts/index.ts";
 
 const MarkdownPage = () =>{
     return(
         <div>
-            <ReactMarkdown className="markdown" children={post.markdown}/>
+            <ReactMarkdown className="markdown" children={posts[0].markdown}/>
         </div>
     )
 }
