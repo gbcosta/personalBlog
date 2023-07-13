@@ -17,10 +17,19 @@ qual
 `
 
 const post: PostData = {
-    name: "test",
+    name: "post_04",
     date: new Date("mar 07 2023"),
     markdown: markdown
 }
 
 export default post;
+
+
+
+
+
+
+
+
+
 

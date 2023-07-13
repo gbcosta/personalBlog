@@ -40,4 +40,3 @@ export type PostData = {
     date: Date;
     markdown: string;
 }
-

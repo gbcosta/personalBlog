@@ -4,7 +4,7 @@ export function App() {
 
   return (
     <div className={"px-[36rem]"}>
-        <MarkdownPage />
+            <HomePage />
     </div>
   )
 }

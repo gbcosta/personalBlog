@@ -1,3 +1,4 @@
+
 import { PostData } from "../utils/utils";
 
 
@@ -17,7 +18,7 @@ qual
 `
 
 const post: PostData = {
-    name: "test",
+    name: "post_02",
     date: new Date("mar 07 2023"),
     markdown: markdown
 }
