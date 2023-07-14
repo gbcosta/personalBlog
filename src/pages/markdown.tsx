@@ -1,11 +1,13 @@
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import "./markdown.css";
-import posts from "../posts/index.ts";
+import { PostData } from "../utils/utils.tsx";
 
-const MarkdownPage = () =>{
+const MarkdownPage = (props:{
+    post: PostData
+}) =>{
     return(
         <div>
-            <ReactMarkdown className="markdown" children={posts[0].markdown}/>
+            <ReactMarkdown className="markdown" children={props.post.markdown}/>
         </div>
     )
 }

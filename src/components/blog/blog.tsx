@@ -4,7 +4,6 @@ const Post = (props:{
     name: string,
     date: Date,
 }) =>{
-    console.log(props);
     return <div className="text-white flex text-xl pb-4 border-b border-white">
         <h2 className="text-bold underline underline-offset-4 hover:no-underline cursor-pointer">{props.name}</h2>
         <div className="flex grow" />
@@ -13,7 +12,6 @@ const Post = (props:{
 }
 
 const getPosts = () =>{
-    console.log(posts);
     return <div className="flex gap-2 flex-col">
         {posts.map((post, key)=>{
             return <Post name={post.name} date={post.date} key={key} />

@@ -26,7 +26,6 @@ export const createReposCard = (repos: GithubData | undefined) =>{
     if(!repos){
         return;
     }
-    console.log(repos);
 
     const filteredRepos = filterRepos(repos);
     const sortedRepos = sortByDate(filteredRepos);

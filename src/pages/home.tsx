@@ -5,7 +5,6 @@ import Blog from "../components/blog/blog";
 
 const HomePage = () =>{
     return <div className={"flex flex-col"}>
-        <Header />
         <Profile />
         <Blog />
         <Projects />
