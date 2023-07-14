@@ -10,9 +10,8 @@ export type ReposData = {
     full_name: string;
     visibility: string;
 }
-
 const octokit = new Octokit({ 
-  auth: "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",
+  auth: import.meta.env.VITE_GITHUB_KEY,
 });
 
 const getRepos = async (setRepos: any) => {
@@ -20,7 +19,7 @@ const getRepos = async (setRepos: any) => {
         username: 'gbcosta',
     }).then(data =>{
         setRepos(data);
-    })
+    }).catch((e)=>console.log(e));
 }
 
 export default getRepos;

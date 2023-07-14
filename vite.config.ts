@@ -8,6 +8,5 @@ export default defineConfig({
     plugins: [preact()],
     css:{ postcss:{
         plugins: [tailwindcss(), autoprefixer()]
-    }}
-
+    }},
 })

@@ -1,5 +1,4 @@
 import {AiFillGithub, AiOutlineMail} from "react-icons/ai"
-import { Link } from "react-router-dom";
 
 const Header = () =>{
     const iconStyle = "cursor-pointer";
