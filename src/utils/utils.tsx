@@ -16,12 +16,14 @@ const sortByDate = (repos: ReposData[]) =>{
     })
     return sortedRepos;
 }
+
 const createCards = (repos: ReposData[]) =>{
     const cards = repos.map((repo: ReposData)=>{
         return <Card reposData={repo}/>
     })
     return cards;
 }
+
 export const createReposCard = (repos: GithubData | undefined) =>{
     if(!repos){
         return;

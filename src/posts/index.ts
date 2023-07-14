@@ -20,5 +20,4 @@ const posts: PostsData = [
 
 ];
 
-
 export default posts;
