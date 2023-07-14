@@ -4,7 +4,6 @@ import post_03 from "./post_03.ts";
 import post_04 from "./post_04.ts";
 import post_05 from "./post_05.ts";
 import post_06 from "./post_06.ts";
-
 import { PostData } from "../utils/utils.tsx";
 
 type PostsData = Array<PostData>;
@@ -20,4 +19,13 @@ const posts: PostsData = [
 
 ];
 
-export default posts;
+const sortByDate = () =>{
+    const sortedRepos = posts.sort((postA: PostData , postB: PostData)=>{
+        const dateA: Date = new Date(postA.date);
+        const dateB: Date = new Date(postB.date);
+        return dateB.getTime() - dateA.getTime();
+    })
+    return sortedRepos;
+}
+
+export default sortByDate();
