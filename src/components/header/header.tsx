@@ -1,10 +1,11 @@
 import {AiFillGithub, AiOutlineMail} from "react-icons/ai"
+import { Link } from "react-router-dom";
 
 const Header = () =>{
     const iconStyle = "cursor-pointer";
-    
+
     return <div className="flex mb-8 mt-4">
-        <a className="text-xl text-zinc-500">Gabriel Santos</a>
+        <a href={"/"} className="text-xl cursor-pointer text-zinc-500">Gabriel Santos</a>
         <div className="flex grow"/>
         <div className={"flex flex-row gap-4 text-2xl text-zinc-500"}>
             <AiFillGithub className={iconStyle} onClick={(()=>{window.open("https://github.com/");})}/>
