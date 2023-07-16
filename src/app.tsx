@@ -6,7 +6,7 @@ import router from "./router/router.tsx";
 export function App() {
 
     return (
-        <div className={"px-[36rem]"}>
+        <div className={"mx-auto px-2 max-w-[45rem]"}>
             <Header />
             <RouterProvider router={router} />
         </div>
