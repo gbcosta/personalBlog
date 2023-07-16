@@ -3,7 +3,7 @@ import Header from "./components/header/header.tsx";
 
 import router from "./router/router.tsx";
 
-export function App() {
+export default function App() {
 
     return (
         <div className={"mx-auto px-2 max-w-[45rem]"}>
@@ -12,3 +12,4 @@ export function App() {
         </div>
     )
 }
+

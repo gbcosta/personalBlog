@@ -1,6 +1,6 @@
 import getRepos, {GithubData} from "../../utils/github/github";
 import { createReposCard } from "../../utils/utils";
-import { useEffect, useState } from "preact/hooks";
+import { useEffect, useState } from "react";
 
 const getCards = (repos: GithubData) =>{
     if(!repos) return;
@@ -34,7 +34,7 @@ const Projects = ()=>{
     return( 
         <div className={"flex flex-col gap -4"}>
             <h2 className={"text-4xl text-white font-bold mb-8"}>Projects</h2>
-        {!repos ? console.log("entrou") : getCards(repos)}
+        {!repos ? "" : getCards(repos)}
     </div>)
 }
 

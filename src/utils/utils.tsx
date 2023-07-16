@@ -18,8 +18,8 @@ const sortByDate = (repos: ReposData[]) =>{
 }
 
 const createCards = (repos: ReposData[]) =>{
-    const cards = repos.map((repo: ReposData)=>{
-        return <Card reposData={repo}/>
+    const cards = repos.map((repo: ReposData, key: any )=>{
+        return <Card reposData={repo} key={key}/>
     })
     return cards;
 }
