@@ -1,15 +1,14 @@
-.markdown{
-
+.Markdown{
     color: white;
 }
 
-h1{
+.Markdown > h1{
     font-size: 4rem !important;
 }
-h2{
+.Markdown > h2{
     font-size: 3rem !important;
 }
-h3{
+.Markdown > h3{
     font-size: 2rem !important;
 }
 h4{
@@ -41,7 +40,7 @@ ul ul{
     margin: 0 !important; 
 }
 
-img{
+.Markdown img{
     margin: 2rem 0 2rem 0;
 }
 

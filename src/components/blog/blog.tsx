@@ -1,11 +1,12 @@
 import posts from "../../posts";
 import { Link } from "react-router-dom";
+
 const Post = (props:{
     name: string,
     date: Date,
 }) =>{
-    return <div className="text-white flex pb-4 border-b border-white">
-        <Link to={props.name} className="text-bold text-lg underline underline-offset-4 hover:no-underline cursor-pointer">{props.name}</Link>
+    return <div className="text-white flex pb-4 border-b border-zinc-800">
+        <Link to={props.name} className="text-bold text-md hover:no-underline cursor-pointer">{props.name}</Link>
         <div className="flex grow" />
         <span className="text-zinc-500">{props.date.toLocaleString().slice(0, 10)}</span>
     </div>
@@ -22,8 +23,8 @@ const getPosts = () =>{
 }
 
 const Blog = () =>{
-    return <div className={"mb-8"}>
-        <h2 className={"text-4xl text-white font-bold mb-8"}>Blog</h2>
+    return <div className={"mb-8 "}>
+        <h3 className={"text-lg text-left text-white font-bold mb-2 border-b border-zinc-800 pb-4"}>Recent Posts</h3>
         {getPosts()}
     </div>;
 }

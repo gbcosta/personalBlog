@@ -6,8 +6,6 @@ const HomePage = () =>{
     return <div className={"flex flex-col"}>
         <Profile />
         <Blog />
-        <Projects />
-
     </div>
 }
 
