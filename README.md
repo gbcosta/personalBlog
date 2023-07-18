@@ -14,9 +14,7 @@
 
 </div>
 
-ThisA landing page to showcase the Purple Ocean Theme. I really didn't like any themes in the vscode marketplace so i decided to create my own theme.Hope you like this theme like me ;). project is simply a personal blog created with React and Tailwind.
-Octokit was used to retrieve my GitHub repositories and display them on the blog.
-
+I created this blog to post about the programming languages and frameworks that I am learning, as well as other topics such as IDEs, terminals, operating systems, and more.
 <img src="./public/home.png"/>
 
 </div>
