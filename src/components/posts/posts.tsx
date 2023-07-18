@@ -5,7 +5,6 @@ const Post = (props:{
     name: string,
     date: Date,
 }) =>{
-    console.log(props.name);
     return <div className="text-white flex pb-4 border-b border-zinc-800">
         <Link to={props.name} className="text-bold text-md hover:no-underline cursor-pointer">{props.name}</Link>
         <div className="flex grow" />
@@ -22,8 +21,8 @@ const getPosts = () =>{
 }
 
 const Posts = () =>{
-    return <div className={"mb-8 "}>
-        <h3 className={"text-lg text-left text-white font-bold mb-2 border-b border-zinc-800 pb-4"}>Recent Posts</h3>
+    return <div className={"mb-8"}>
+        <h3 className={"text-4xl text-white font-bold mb-12"}>Posts</h3>
         {getPosts()}
     </div>;
 }
