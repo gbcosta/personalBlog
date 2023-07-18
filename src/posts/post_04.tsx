@@ -17,7 +17,7 @@ qual
 `
 
 const post: PostData = {
-    name: "test",
+    name: "test5",
     date: new Date("mar 07 2023"),
     markdown: markdown
 }

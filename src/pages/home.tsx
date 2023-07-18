@@ -1,4 +1,3 @@
-import Projects from "../components/projects/projects";
 import Profile from "../components/profile/profile";
 import Blog from "../components/blog/blog";
 

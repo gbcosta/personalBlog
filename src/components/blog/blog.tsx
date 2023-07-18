@@ -6,7 +6,7 @@ const Post = (props:{
     date: Date,
 }) =>{
     return <div className="text-white flex pb-4 border-b border-zinc-800">
-        <Link to={props.name} className="text-bold text-md hover:no-underline cursor-pointer">{props.name}</Link>
+        <Link to={`posts/${props.name}`} className="text-bold text-md hover:no-underline cursor-pointer">{props.name}</Link>
         <div className="flex grow" />
         <span className="text-zinc-500">{props.date.toLocaleString().slice(0, 10)}</span>
     </div>
