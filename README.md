@@ -1,9 +1,8 @@
-# Personal Blog
-
-
 <div align="center">
 
 # Personal Blog
+
+<a href="https://gbcostablog.netlify.app/">link</a>
 
 <div style="display:flex; gap: 12px; flex-direction: row; justify-content: center">
 
