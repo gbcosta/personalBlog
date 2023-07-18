@@ -1,4 +1,4 @@
-import posts from "../../posts";
+import posts from "../posts";
 import { Link } from "react-router-dom";
 
 const Post = (props:{
@@ -20,11 +20,11 @@ const getPosts = () =>{
     </div>
 }
 
-const Posts = () =>{
+const PostsPage = () =>{
     return <div className={"mb-8"}>
         <h3 className={"text-4xl text-white font-bold mb-12"}>Posts</h3>
         {getPosts()}
     </div>;
 }
 
-export default Posts;
+export default PostsPage;

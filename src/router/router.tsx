@@ -1,11 +1,10 @@
+import {createBrowserRouter, RouteObject, } from "react-router-dom";
+import posts from "../posts/index.ts";
 import MarkdownPage from "../pages/markdown.tsx";
 import HomePage from "../pages/home.tsx";
-import {createBrowserRouter, RouteObject, } from "react-router-dom";
 import ErrorPage from "../pages/errorPage.tsx";
-import posts from "../posts/index.ts";
-import PostsComponent from "../components/posts/posts.tsx";
-
-
+import PostsPage from "../pages/postsPage.tsx";
+import AboutPage from "../pages/aboutPage.tsx";
 
 const getPostRoutes = () =>{
     const postRoutes: Array<RouteObject> = [];
@@ -28,9 +27,15 @@ const router = createBrowserRouter([
     },
     {
         path: "/posts",
-        element: <PostsComponent />,
+        element: <PostsPage />,
         errorElement: <ErrorPage />
     },
+{
+        path: "/about",
+        element: <AboutPage />,
+        errorElement: <ErrorPage />
+    },
+
     ...getPostRoutes()
 ])
 

@@ -12,6 +12,7 @@ const Header = () =>{
         <div className={"flex flex-row gap-4 text-md text-zinc-400 cursor-pointer font-semibold "}>
             <a href={"/"} className={`${pathname == "/" ? "text-white" :"text-zinc-400" }`}>Home</a>
             <a href={"/posts"} className={`${pathname.search("/posts") > -1 ? "text-white" :"text-zinc-400"}`}>Posts</a>
+            <a href={"/about"} className={`${pathname.search("/about") > -1 ? "text-white" :"text-zinc-400"}`}>About</a>
         </div>
     </div>
 }

@@ -13,10 +13,10 @@ const getCards = (repos: GithubData) =>{
     const _reposBottom = _repos.slice(3, 6);
 
     const CardsContainer = <div className={"flex flex-col gap-4 items-center w-full"}> 
-            <div className={"flex gap-4 w-full"}>
+        <div className={"flex flex-col md:flex-row gap-4 w-full"}>
             {_reposTop}
         </div>
-        <div className={"flex gap-4 w-full"}>
+        <div className={"flex flex-col md:flex-row gap-4 w-full"}>
             {_reposBottom}
         </div>
     </div>
@@ -33,9 +33,8 @@ const Projects = ()=>{
 
     return( 
         <div className={"flex flex-col gap -4"}>
-            <h2 className={"text-4xl text-white font-bold mb-8"}>Projects</h2>
-        {!repos ? "" : getCards(repos)}
-    </div>)
+            {!repos ? "" : getCards(repos)}
+        </div>)
 }
 
 export default Projects;
